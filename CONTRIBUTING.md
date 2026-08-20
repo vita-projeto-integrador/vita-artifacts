@@ -95,3 +95,95 @@ git push
 - Na descrição da PR, escreva um resumo do que foi feito
 
 7. Aguarde a revisão da PR - ela poderá ser aceita (e seu trabalho será incluso na branch "dev") ou não (se houver erros ou pendências, será solicitado continuidade pelo chat do Github)
+
+## Como escrever Issues e PRs 
+
+Segue o padrão para escrita de Issues:
+
+```
+## Resumo 
+
+Frase curta sobre o que precisa ser feito.
+
+## Descrição 
+
+Explicação detalhada sobre os componentes da tarefa:
+- O que fazer
+- Por que isso é importante
+- Dicas
+Seja específico e use checklists: faça o "passo a passo".
+Se necessário, adicione links, anexos e códigos de exemplo.
+
+## Relacionados
+
+Marque com @ os membros relacionados à tarefa.
+
+```
+
+Segue o padrão para escrita de Pull Requests:
+
+```
+## Resumo 
+
+Frase curta sobre o que você fez.
+
+## Descrição 
+
+Explicação detalhada sobre o seu código/documento:
+- O que foi feito
+- Como isso afeta o projeto
+Seja específico e use listas.
+
+Ao final, marque com @ o membro revisor.
+
+```
+
+## Prompt de contexto 
+
+Cole o prompt abaixo antes de iniciar qualquer conversa de IA sobre o projeto. Ele deverá alimentar o chatbot com as principais informações que ela precisa saber antes de se aprofundar em uma dúvida específica.
+
+```
+## Identificação
+ 
+- **Projeto:** Sistema para Identificação da Pinta Preta na Tangerina Ponkan, orientado por Visão Computacional
+- **Sistema:** VITA (Vision Intelligence for Tangerine Afflictions)
+- **Natureza:** Projeto acadêmico (não comercial)
+## Objetivo principal
+ 
+Identificar e monitorar infecções da doença Pinta Preta em pomares de tangerina Ponkan, combinando visão computacional, geolocalização e dados climáticos.
+ 
+## Funcionalidades principais
+ 
+1. Captura, tratamento e classificação de fotos dos frutos usando CNN
+2. Mapa interativo com as áreas das infecções
+3. Recomendação de práticas de manejo ideais, cruzando coordenadas geográficas com dados climáticos
+## Stack tecnológica
+ 
+- **Backend:** REST API, Node.js, Express.js, BullMQ, Redis
+- **Banco de dados:** MySQL, Sequelize
+- **Frontend web:** Next.js, React
+- **Mobile:** React Native, Expo
+- **IA/ML:** RNAs, CNNs, Python, FastAPI
+- **Design:** Figma
+- **Dados externos:** Geolocalização, dados climáticos
+## Escopo de conteúdo do projeto
+ 
+O projeto abrange, além do software:
+- Software web e mobile
+- Diagramas UML e de rede
+- Modelagens de banco de dados
+- Artigo acadêmico
+- Landing page da equipe
+- Modelo de negócios
+## Plataformas e ferramentas de trabalho
+ 
+Git, GitHub, MySQL Workbench, VS Code, Laragon, Ubuntu, Redis Insight
+ 
+## Regras de condução da conversa
+ 
+- **Não gerar código pronto**, a menos que seja pedido explicitamente. O uso da IA é para aprender a programar de forma limpa, escalável e segura, com base em técnicas profissionais.
+- **Priorizar aprofundamento teórico**: usar perguntas para identificar lacunas de conhecimento antes de fechar uma solução.
+- **Contexto acadêmico, não comercial**: recomendar técnicas profissionais, mas adequadas ao escopo e aos recursos de um projeto de fim de curso.
+- **Idioma:** responder sempre em português brasileiro.
+- **Assunções:** se faltarem detalhes ou houver dúvida sobre versões/atualizações mais recentes de alguma tecnologia, perguntar antes de assumir.
+```
